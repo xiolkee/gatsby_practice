@@ -1,0 +1,14 @@
+.headerWrap {
+  background-color: #fff;
+  border-top: 4px solid orange;
+  border-bottom: 1px solid gray;
+}
+
+.headerInner {
+  max-width: 1080px;
+  height: 54px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+}
