@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 const wrap = css`
+  background: #fff;
   border: 1px solid ${Color.gray3};
   border-radius: 4px;
   overflow: hidden;
