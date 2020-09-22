@@ -1,8 +1,21 @@
 import React from "react"
 import styles from "./cemetery.module.scss"
 import Button from "../components/button"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
-export default function cemetery() {
+export default function Cemetery() {
+  const data = useStaticQuery(graphql`
+    query {
+      image1: file(relativePath: { eq: "aoyama.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
   return (
     <section className={styles.cemeteryWrap}>
       <header className={styles.cemeteryHeader}>
@@ -10,6 +23,7 @@ export default function cemetery() {
         <p className={styles.cemeteryHeaderSpec}>墓地タイプ|宗教宗派</p>
       </header>
       <div className={styles.cemeteryImage}>
+        <Img fluid={data.image1.childImageSharp.fluid} />
       </div>
       <div className={styles.cemeteryContents}>
         <div className={styles.cemeteryReview}>
