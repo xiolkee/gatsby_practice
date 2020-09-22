@@ -4,6 +4,7 @@ import {Color} from "../variables/color"
 import {Text} from "../variables/text"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import Button from "../components/button"
 
 const wrap = css`
   width: 100%;
@@ -52,6 +53,7 @@ export default function MainVisual() {
         <div css={titleWrap}>
           <p css={subTitle}>全国取扱い霊園数<br />8,700以上！</p>
           <p css={mainTitle}>カンタン情報収集！</p>
+          <Button />
         </div>
       </div>
     </div>

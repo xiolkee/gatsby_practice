@@ -103,9 +103,9 @@ export default function Cemetery() {
           みんなの評価<span role="img">⭐︎⭐︎⭐︎⭐︎</span>5.0
         </div>
         <div css={infomation}>
-          <p>住所の文字列</p>
-          <p>最寄駅からxxm</p>
-          <p>最安購入価格：NN万円〜</p>
+          <p>名古屋市千種区春岡１−１−１</p>
+          <p>今池駅から569m</p>
+          <p>最安購入価格：50万円〜</p>
         </div>
         <ul css={recommendPoints}>
           <li>季節の花々が咲き誇る霊園</li>
