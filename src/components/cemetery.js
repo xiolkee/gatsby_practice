@@ -13,6 +13,13 @@ export default function Cemetery() {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
+      },
+      image2: file(relativePath: { eq: "aoyama02.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
       }
     }
   `)
@@ -24,7 +31,9 @@ export default function Cemetery() {
       </header>
       <div className={styles.cemeteryImage}>
         <Img fluid={data.image1.childImageSharp.fluid} />
+        <Img fluid={data.image2.childImageSharp.fluid} />
       </div>
+
       <div className={styles.cemeteryContents}>
         <div className={styles.cemeteryReview}>
           みんなの評価⭐︎⭐︎⭐︎⭐︎5.0
