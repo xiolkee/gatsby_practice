@@ -13,8 +13,7 @@ export default function cemetery() {
       </div>
       <div className={styles.cemeteryContents}>
         <div className={styles.cemeteryReview}>
-          みんなの評価
-          口コミ
+          みんなの評価⭐︎⭐︎⭐︎⭐︎5.0
         </div>
         <div className={styles.cemeteryAccess}>
           <p>住所の文字列</p>
