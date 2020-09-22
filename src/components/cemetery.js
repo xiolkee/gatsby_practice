@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./cemetery.module.scss"
-import Button from "../component/button"
+import Button from "../components/button"
 
 export default function cemetery() {
   return (
