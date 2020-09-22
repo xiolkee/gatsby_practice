@@ -1,7 +1,17 @@
 export const Color = {
   mainColor01: '#FFC758',
   mainColor02: '#BE7E00',
-  mainColor03: '#9F6A00	',
+  mainColor03: '#9F6A00',
   accentColor01: '#70BA2C',
   accentColor02: '#41A233',
+  gray1: '#F4F3F1',
+  gray2: '#EAE7E2',
+  gray3: '#D3CDC5',
+  gray4: '#BEB5A7',
+  gray5: '#A99C8A',
+  gray6: '#766957',
+  black: '#3D3529',
+  alertColor: '#E1394D',
+  backgroundColor: '#FFFAF1',
+  markerColor: '#e0f79b',
 }
